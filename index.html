@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practical Game Kits</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0e1214;
+      --panel: #181e21;
+      --text: #f2f4f4;
+      --muted: #a5b2b2;
+      --teal: #15bec5;
+      --gold: #f6b843;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(115deg, var(--panel) 0 30%, var(--bg) 30% 72%, var(--panel) 72% 100%);
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .badge {
+      display: grid;
+      place-items: center;
+      width: 112px;
+      height: 112px;
+      border: 6px solid var(--gold);
+      border-radius: 999px;
+      box-shadow: inset 0 0 0 4px var(--teal);
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      background: #080b0d;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1;
+    }
+
+    .subtitle {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: clamp(19px, 3vw, 28px);
+    }
+
+    section {
+      border-top: 4px solid var(--gold);
+      background: rgba(8, 11, 13, 0.68);
+      padding: 28px;
+      margin-top: 24px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--teal);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      border: 1px solid var(--teal);
+      padding: 7px 10px;
+      color: var(--text);
+      background: rgba(21, 190, 197, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <div class="badge">PGK</div>
+      <div>
+        <h1>Practical Game Kits</h1>
+        <p class="subtitle">Game templates and starter systems.</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>About</h2>
+      <p>Practical Game Kits creates reusable frameworks, demo projects, and game systems that help creators start faster and customize with confidence.</p>
+      <p>Our packages focus on clean structure, readable code, practical documentation, and starter content that can be replaced with your own art and design.</p>
+      <div class="tags">
+        <span class="tag">Templates</span>
+        <span class="tag">Starter Systems</span>
+        <span class="tag">Frameworks</span>
+        <span class="tag">Game Tools</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Support</h2>
+      <p>For package support, questions, or update requests, contact:</p>
+      <p><a href="mailto:practicalgamekits@gmail.com">practicalgamekits@gmail.com</a></p>
+    </section>
+  </main>
+</body>
+</html>
